@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+<!--    Main Heading as Conversion-->
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONVERSION"
+        android:textColor="@color/red"
+        android:textStyle="bold"/>
+
+<!--    sub textview shows the list of conversions-->
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="KM-M, M-KM, CM-IN, IN-CM, KG-LB, LB-KG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+<!--    Hint to select one from dropdown list-->
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_marginTop="10dp"
+        android:text="select one conversion from dropdown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<!--     Adding spinner to select the conversions-->
+    <Spinner
+        android:layout_marginTop="0dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ADD8E6"
+        android:layout_marginBottom="1dp"/>
+
+<!--    adding the layout to get both unit and value-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:padding="5dp">
+
+<!--        adding textview of Unit-->
+        <TextView
+            android:id="@+id/unit_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="CM"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+<!--        Added edittext to get userinput-->
+        <EditText
+            android:id="@+id/editTextTextOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+    <!--    adding the layout to get both unit and value-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:background="@color/white">
+
+        <!--        adding textview of Unit-->
+        <TextView
+            android:id="@+id/unit_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_light"
+            android:text="IN"
+            android:textColor="@color/black"
+            android:textSize="30sp" />
+
+        <!--        Added edittext to get userinput-->
+        <EditText
+            android:id="@+id/editTextTextTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@null"
+            android:hint="0.00"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+
+            android:textColorHint="@color/black"
+            android:textSize="50sp" />
+    </RelativeLayout>
+
+
+<!--Adding textview to explain the shortcuts of units-->
+   <TextView
+    android:id="@+id/textView9"
+    android:layout_width="match_parent"
+    android:layout_height="22dp"
+    android:layout_marginTop="20dp"
+    android:textAlignment="center"
+    android:text="CM : CENTIMETERS">
+
+</TextView>
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="KM : KILOMETERS">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="KG : KILOGRAMS">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="LB : POUNDS">
+
+    </TextView>
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="M : MILES">
+
+    </TextView><TextView
+    android:id="@+id/textView6"
+    android:layout_width="match_parent"
+    android:layout_height="22dp"
+    android:layout_marginTop="20dp"
+    android:textAlignment="center"
+    android:text="IN : INCHES">
+
+</TextView>
+
+<!--    conversion information-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="20dp"
+        android:text="This conversion app will convert six unit values which are KM, LB, M, IN, KG,CM. The app will perform two converion at a time, so you can either enter the values in both the text fields."
+        ></TextView>
+</LinearLayout>
